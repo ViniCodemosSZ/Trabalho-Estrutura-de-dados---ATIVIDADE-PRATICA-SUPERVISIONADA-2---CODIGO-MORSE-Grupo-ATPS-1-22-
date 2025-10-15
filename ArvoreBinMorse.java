@@ -7,6 +7,46 @@ public class ArvoreBinMorse {
         raiz = new Nodo();
     }
 
+    // Metodo pra iniciar a arvore com o alfabeto e os numeros
+    public void inicializar() {
+        inserir(".-", 'A');
+        inserir("-...", 'B');
+        inserir("-.-.", 'C');
+        inserir("-..", 'D');
+        inserir(".", 'E');
+        inserir("..-.", 'F');
+        inserir("--.", 'G');
+        inserir("....", 'H');
+        inserir("..", 'I');
+        inserir(".---", 'J');
+        inserir("-.-", 'K');
+        inserir(".-..", 'L');
+        inserir("--", 'M');
+        inserir("-.", 'N');
+        inserir("---", 'O');
+        inserir(".--.", 'P');
+        inserir("--.-", 'Q');
+        inserir(".-.", 'R');
+        inserir("...", 'S');
+        inserir("-", 'T');
+        inserir("..-", 'U');
+        inserir("...-", 'V');
+        inserir(".--", 'W');
+        inserir("-..-", 'X');
+        inserir("-.--", 'Y');
+        inserir("--..", 'Z');
+        inserir("-----", '0');
+        inserir(".----", '1');
+        inserir("..---", '2');
+        inserir("...--", '3');
+        inserir("....-", '4');
+        inserir(".....", '5');
+        inserir("-....", '6');
+        inserir("--...", '7');
+        inserir("---..", '8');
+        inserir("----.", '9');
+    }
+
     public void inserir(String codigo_morse, char caracter) {
         int tamanho_string = codigo_morse.length();
         Nodo atual = this.raiz;
